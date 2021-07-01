@@ -1,0 +1,540 @@
+28-06-2021 09:49:14.559 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 09:49:14.810 [36mINFO  [restartedMain] StartupInfoLogger.logStarting:55 :    [mStarting RestApplication using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 21997 (/home/avistech/Downloads/rest/target/classes started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 09:49:14.821 [32mDEBUG [restartedMain] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 09:49:14.822 [36mINFO  [restartedMain] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 09:49:15.220 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+28-06-2021 09:49:15.221 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+28-06-2021 09:49:18.622 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 09:49:18.661 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 26 ms. Found 0 JDBC repository interfaces.
+28-06-2021 09:49:20.307 [36mINFO  [restartedMain] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 8080 (http)
+28-06-2021 09:49:20.357 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-8080"]
+28-06-2021 09:49:20.359 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 09:49:20.360 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 09:49:20.486 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 09:49:20.487 [36mINFO  [restartedMain] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 5265 ms
+28-06-2021 09:49:21.265 [36mINFO  [restartedMain] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 09:49:21.715 [36mINFO  [restartedMain] HikariDataSource.getConnection:110 :    [mHikariPool-1 - Starting...
+28-06-2021 09:49:23.022 [36mINFO  [restartedMain] HikariDataSource.getConnection:123 :    [mHikariPool-1 - Start completed.
+28-06-2021 09:49:23.366 [36mINFO  [restartedMain] OptionalLiveReloadServer.startServer:58 :    [mLiveReload server is running on port 35729
+28-06-2021 09:49:23.385 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-8080"]
+28-06-2021 09:49:23.431 [36mINFO  [restartedMain] TomcatWebServer.start:220 :    [mTomcat started on port(s): 8080 (http) with context path ''
+28-06-2021 09:49:23.450 [36mINFO  [restartedMain] StartupInfoLogger.logStarted:61 :    [mStarted RestApplication in 11.828 seconds (JVM running for 18.092)
+28-06-2021 09:49:32.361 [36mINFO  [http-nio-8080-exec-2] DirectJDKLog.log:173 :    [mInitializing Spring DispatcherServlet 'dispatcherServlet'
+28-06-2021 09:49:32.362 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet 'dispatcherServlet'
+28-06-2021 09:49:32.363 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 1 ms
+28-06-2021 09:49:32.755 [33mWARN  [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver.doResolveHandlerMethodException:434 :    [mFailure in @ExceptionHandler com.restApi.rest.exceptionConfig.CustomizedResponseEntityExceptionHandler#handleException(Exception, WebRequest)
+org.springframework.http.converter.HttpMessageNotWritableException: No converter found for return value of type: class com.restApi.rest.exceptionConfig.ErrorDetails
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:220)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:428)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1320)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1131)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+28-06-2021 09:49:32.762 [33mWARN  [http-nio-8080-exec-2] AbstractHandlerExceptionResolver.logException:207 :    [mResolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.restApi.rest.controllers.ContactRestController.saveContactIntoDB(com.restApi.rest.beans.ContactBean) throws java.lang.Exception with 2 errors: [Field error in object 'contactBean' on field 'firstname': rejected value [null]; codes [NotEmpty.contactBean.firstname,NotEmpty.firstname,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactBean.firstname,firstname]; arguments []; default message [firstname]]; default message [must not be empty]] [Field error in object 'contactBean' on field 'firstname': rejected value [null]; codes [NotNull.contactBean.firstname,NotNull.firstname,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactBean.firstname,firstname]; arguments []; default message [firstname]]; default message [must not be null]] ]
+28-06-2021 09:53:25.335 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 09:53:25.337 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:350 :    [mHikariPool-1 - Shutdown initiated...
+28-06-2021 09:53:25.380 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:352 :    [mHikariPool-1 - Shutdown completed.
+28-06-2021 09:53:33.429 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 09:53:33.483 [36mINFO  [restartedMain] StartupInfoLogger.logStarting:55 :    [mStarting RestApplication using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 22462 (/home/avistech/Downloads/rest/target/classes started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 09:53:33.490 [32mDEBUG [restartedMain] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 09:53:33.492 [36mINFO  [restartedMain] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 09:53:33.618 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+28-06-2021 09:53:33.620 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+28-06-2021 09:53:34.926 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 09:53:34.944 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+28-06-2021 09:53:35.984 [36mINFO  [restartedMain] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 8080 (http)
+28-06-2021 09:53:36.019 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-8080"]
+28-06-2021 09:53:36.021 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 09:53:36.022 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 09:53:36.117 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 09:53:36.118 [36mINFO  [restartedMain] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 2496 ms
+28-06-2021 09:53:36.778 [36mINFO  [restartedMain] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 09:53:37.153 [36mINFO  [restartedMain] HikariDataSource.getConnection:110 :    [mHikariPool-1 - Starting...
+28-06-2021 09:53:37.775 [36mINFO  [restartedMain] HikariDataSource.getConnection:123 :    [mHikariPool-1 - Start completed.
+28-06-2021 09:53:38.001 [36mINFO  [restartedMain] OptionalLiveReloadServer.startServer:58 :    [mLiveReload server is running on port 35729
+28-06-2021 09:53:38.053 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-8080"]
+28-06-2021 09:53:38.117 [36mINFO  [restartedMain] TomcatWebServer.start:220 :    [mTomcat started on port(s): 8080 (http) with context path ''
+28-06-2021 09:53:38.187 [36mINFO  [restartedMain] StartupInfoLogger.logStarted:61 :    [mStarted RestApplication in 6.026 seconds (JVM running for 8.369)
+28-06-2021 09:53:46.573 [36mINFO  [http-nio-8080-exec-2] DirectJDKLog.log:173 :    [mInitializing Spring DispatcherServlet 'dispatcherServlet'
+28-06-2021 09:53:46.574 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet 'dispatcherServlet'
+28-06-2021 09:53:46.577 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 2 ms
+28-06-2021 09:53:47.116 [33mWARN  [http-nio-8080-exec-2] AbstractHandlerExceptionResolver.logException:207 :    [mResolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.String> com.restApi.rest.controllers.ContactRestController.saveContactIntoDB(com.restApi.rest.beans.ContactBean) throws java.lang.Exception with 2 errors: [Field error in object 'contactBean' on field 'firstname': rejected value [null]; codes [NotNull.contactBean.firstname,NotNull.firstname,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactBean.firstname,firstname]; arguments []; default message [firstname]]; default message [must not be null]] [Field error in object 'contactBean' on field 'firstname': rejected value [null]; codes [NotEmpty.contactBean.firstname,NotEmpty.firstname,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactBean.firstname,firstname]; arguments []; default message [firstname]]; default message [must not be empty]] ]
+28-06-2021 09:57:04.738 [36mINFO  [Thread-6] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 09:57:04.740 [36mINFO  [Thread-6] HikariDataSource.close:350 :    [mHikariPool-1 - Shutdown initiated...
+28-06-2021 09:57:04.816 [36mINFO  [Thread-6] HikariDataSource.close:352 :    [mHikariPool-1 - Shutdown completed.
+28-06-2021 09:57:05.283 [36mINFO  [restartedMain] StartupInfoLogger.logStarting:55 :    [mStarting RestApplication using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 22462 (/home/avistech/Downloads/rest/target/classes started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 09:57:05.284 [32mDEBUG [restartedMain] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 09:57:05.284 [36mINFO  [restartedMain] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 09:57:06.000 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 09:57:06.014 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 12 ms. Found 0 JDBC repository interfaces.
+28-06-2021 09:57:06.495 [36mINFO  [restartedMain] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 8080 (http)
+28-06-2021 09:57:06.501 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-8080"]
+28-06-2021 09:57:06.508 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 09:57:06.509 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 09:57:06.595 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 09:57:06.596 [36mINFO  [restartedMain] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 1308 ms
+28-06-2021 09:57:07.036 [36mINFO  [restartedMain] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 09:57:07.271 [36mINFO  [restartedMain] HikariDataSource.getConnection:110 :    [mHikariPool-2 - Starting...
+28-06-2021 09:57:07.430 [36mINFO  [restartedMain] HikariDataSource.getConnection:123 :    [mHikariPool-2 - Start completed.
+28-06-2021 09:57:07.512 [36mINFO  [restartedMain] OptionalLiveReloadServer.startServer:58 :    [mLiveReload server is running on port 35729
+28-06-2021 09:57:07.532 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-8080"]
+28-06-2021 09:57:07.634 [36mINFO  [restartedMain] TomcatWebServer.start:220 :    [mTomcat started on port(s): 8080 (http) with context path ''
+28-06-2021 09:57:07.654 [36mINFO  [restartedMain] StartupInfoLogger.logStarted:61 :    [mStarted RestApplication in 2.615 seconds (JVM running for 217.829)
+28-06-2021 09:57:07.658 [36mINFO  [restartedMain] ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 :    [mCondition evaluation unchanged
+28-06-2021 09:57:09.371 [36mINFO  [Thread-9] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 09:57:09.373 [36mINFO  [Thread-9] HikariDataSource.close:350 :    [mHikariPool-2 - Shutdown initiated...
+28-06-2021 09:57:09.420 [36mINFO  [Thread-9] HikariDataSource.close:352 :    [mHikariPool-2 - Shutdown completed.
+28-06-2021 09:57:09.803 [36mINFO  [restartedMain] StartupInfoLogger.logStarting:55 :    [mStarting RestApplication using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 22462 (/home/avistech/Downloads/rest/target/classes started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 09:57:09.804 [32mDEBUG [restartedMain] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 09:57:09.808 [36mINFO  [restartedMain] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 09:57:10.276 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 09:57:10.303 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 26 ms. Found 0 JDBC repository interfaces.
+28-06-2021 09:57:10.608 [36mINFO  [restartedMain] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 8080 (http)
+28-06-2021 09:57:10.611 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-8080"]
+28-06-2021 09:57:10.612 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 09:57:10.615 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 09:57:10.652 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 09:57:10.653 [36mINFO  [restartedMain] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 837 ms
+28-06-2021 09:57:11.029 [36mINFO  [restartedMain] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 09:57:11.188 [36mINFO  [restartedMain] HikariDataSource.getConnection:110 :    [mHikariPool-3 - Starting...
+28-06-2021 09:57:11.285 [36mINFO  [restartedMain] HikariDataSource.getConnection:123 :    [mHikariPool-3 - Start completed.
+28-06-2021 09:57:11.379 [36mINFO  [restartedMain] OptionalLiveReloadServer.startServer:58 :    [mLiveReload server is running on port 35729
+28-06-2021 09:57:11.397 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-8080"]
+28-06-2021 09:57:11.519 [36mINFO  [restartedMain] TomcatWebServer.start:220 :    [mTomcat started on port(s): 8080 (http) with context path ''
+28-06-2021 09:57:11.524 [36mINFO  [restartedMain] StartupInfoLogger.logStarted:61 :    [mStarted RestApplication in 1.976 seconds (JVM running for 221.706)
+28-06-2021 09:57:11.526 [36mINFO  [restartedMain] ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 :    [mCondition evaluation unchanged
+28-06-2021 09:58:25.120 [36mINFO  [http-nio-8080-exec-2] DirectJDKLog.log:173 :    [mInitializing Spring DispatcherServlet 'dispatcherServlet'
+28-06-2021 09:58:25.121 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet 'dispatcherServlet'
+28-06-2021 09:58:25.122 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 1 ms
+28-06-2021 09:58:25.133 [33mWARN  [http-nio-8080-exec-2] ResponseEntityExceptionHandler.handleHttpRequestMethodNotSupported:209 :    [mRequest method 'POST' not supported
+28-06-2021 09:58:25.156 [33mWARN  [http-nio-8080-exec-2] AbstractHandlerExceptionResolver.logException:207 :    [mResolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+28-06-2021 10:08:03.954 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 10:08:03.956 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:350 :    [mHikariPool-3 - Shutdown initiated...
+28-06-2021 10:08:03.972 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:352 :    [mHikariPool-3 - Shutdown completed.
+28-06-2021 10:08:11.126 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 10:08:11.182 [36mINFO  [restartedMain] StartupInfoLogger.logStarting:55 :    [mStarting RestApplication using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 23543 (/home/avistech/Downloads/rest/target/classes started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 10:08:11.189 [32mDEBUG [restartedMain] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 10:08:11.191 [36mINFO  [restartedMain] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 10:08:11.340 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+28-06-2021 10:08:11.344 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+28-06-2021 10:08:12.561 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 10:08:12.578 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+28-06-2021 10:08:13.491 [36mINFO  [restartedMain] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 8080 (http)
+28-06-2021 10:08:13.520 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-8080"]
+28-06-2021 10:08:13.522 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 10:08:13.523 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 10:08:13.614 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 10:08:13.615 [36mINFO  [restartedMain] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 2262 ms
+28-06-2021 10:08:14.304 [36mINFO  [restartedMain] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 10:08:14.635 [36mINFO  [restartedMain] HikariDataSource.getConnection:110 :    [mHikariPool-1 - Starting...
+28-06-2021 10:08:15.039 [36mINFO  [restartedMain] HikariDataSource.getConnection:123 :    [mHikariPool-1 - Start completed.
+28-06-2021 10:08:15.237 [36mINFO  [restartedMain] OptionalLiveReloadServer.startServer:58 :    [mLiveReload server is running on port 35729
+28-06-2021 10:08:15.271 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-8080"]
+28-06-2021 10:08:15.319 [36mINFO  [restartedMain] TomcatWebServer.start:220 :    [mTomcat started on port(s): 8080 (http) with context path ''
+28-06-2021 10:08:15.347 [36mINFO  [restartedMain] StartupInfoLogger.logStarted:61 :    [mStarted RestApplication in 5.349 seconds (JVM running for 7.517)
+28-06-2021 10:08:23.035 [36mINFO  [http-nio-8080-exec-2] DirectJDKLog.log:173 :    [mInitializing Spring DispatcherServlet 'dispatcherServlet'
+28-06-2021 10:08:23.036 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet 'dispatcherServlet'
+28-06-2021 10:08:23.039 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 2 ms
+28-06-2021 10:15:25.514 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 10:15:25.574 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:350 :    [mHikariPool-1 - Shutdown initiated...
+28-06-2021 10:15:25.630 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:352 :    [mHikariPool-1 - Shutdown completed.
+28-06-2021 10:15:45.691 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 10:15:45.723 [36mINFO  [restartedMain] StartupInfoLogger.logStarting:55 :    [mStarting RestApplication using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 24180 (/home/avistech/Downloads/rest/target/classes started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 10:15:45.759 [32mDEBUG [restartedMain] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 10:15:45.772 [36mINFO  [restartedMain] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 10:15:46.184 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+28-06-2021 10:15:46.185 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+28-06-2021 10:15:48.617 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 10:15:48.639 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+28-06-2021 10:15:50.258 [36mINFO  [restartedMain] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 8080 (http)
+28-06-2021 10:15:50.331 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-8080"]
+28-06-2021 10:15:50.335 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 10:15:50.337 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 10:15:50.498 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 10:15:50.499 [36mINFO  [restartedMain] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 4311 ms
+28-06-2021 10:15:51.476 [36mINFO  [restartedMain] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 10:15:52.164 [36mINFO  [restartedMain] HikariDataSource.getConnection:110 :    [mHikariPool-1 - Starting...
+28-06-2021 10:15:53.358 [36mINFO  [restartedMain] HikariDataSource.getConnection:123 :    [mHikariPool-1 - Start completed.
+28-06-2021 10:15:53.777 [36mINFO  [restartedMain] OptionalLiveReloadServer.startServer:58 :    [mLiveReload server is running on port 35729
+28-06-2021 10:15:53.804 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-8080"]
+28-06-2021 10:15:53.868 [36mINFO  [restartedMain] TomcatWebServer.start:220 :    [mTomcat started on port(s): 8080 (http) with context path ''
+28-06-2021 10:15:53.906 [36mINFO  [restartedMain] StartupInfoLogger.logStarted:61 :    [mStarted RestApplication in 12.407 seconds (JVM running for 17.139)
+28-06-2021 10:16:00.808 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 10:16:00.810 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:350 :    [mHikariPool-1 - Shutdown initiated...
+28-06-2021 10:16:00.843 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:352 :    [mHikariPool-1 - Shutdown completed.
+28-06-2021 10:16:10.334 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 10:16:10.401 [36mINFO  [restartedMain] StartupInfoLogger.logStarting:55 :    [mStarting RestApplication using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 24321 (/home/avistech/Downloads/rest/target/classes started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 10:16:10.410 [32mDEBUG [restartedMain] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 10:16:10.412 [36mINFO  [restartedMain] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 10:16:10.588 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+28-06-2021 10:16:10.591 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+28-06-2021 10:16:12.789 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 10:16:12.816 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 15 ms. Found 0 JDBC repository interfaces.
+28-06-2021 10:16:14.423 [36mINFO  [restartedMain] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 8080 (http)
+28-06-2021 10:16:14.473 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-8080"]
+28-06-2021 10:16:14.475 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 10:16:14.477 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 10:16:14.621 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 10:16:14.622 [36mINFO  [restartedMain] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 4029 ms
+28-06-2021 10:16:15.755 [36mINFO  [restartedMain] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 10:16:16.374 [36mINFO  [restartedMain] HikariDataSource.getConnection:110 :    [mHikariPool-1 - Starting...
+28-06-2021 10:16:17.058 [36mINFO  [restartedMain] HikariDataSource.getConnection:123 :    [mHikariPool-1 - Start completed.
+28-06-2021 10:16:17.468 [36mINFO  [restartedMain] OptionalLiveReloadServer.startServer:58 :    [mLiveReload server is running on port 35729
+28-06-2021 10:16:17.517 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-8080"]
+28-06-2021 10:16:17.710 [36mINFO  [restartedMain] TomcatWebServer.start:220 :    [mTomcat started on port(s): 8080 (http) with context path ''
+28-06-2021 10:16:17.752 [36mINFO  [restartedMain] StartupInfoLogger.logStarted:61 :    [mStarted RestApplication in 9.108 seconds (JVM running for 11.603)
+28-06-2021 10:23:43.627 [36mINFO  [http-nio-8080-exec-1] DirectJDKLog.log:173 :    [mInitializing Spring DispatcherServlet 'dispatcherServlet'
+28-06-2021 10:23:43.629 [36mINFO  [http-nio-8080-exec-1] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet 'dispatcherServlet'
+28-06-2021 10:23:43.632 [36mINFO  [http-nio-8080-exec-1] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 2 ms
+28-06-2021 10:23:44.587 [33mWARN  [http-nio-8080-exec-1] AbstractHandlerExceptionResolver.logException:207 :    [mResolved [org.json.JSONException: A JSONObject text must begin with '{' at 1 [character 2 line 1]]
+28-06-2021 10:30:45.714 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 10:30:45.717 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:350 :    [mHikariPool-1 - Shutdown initiated...
+28-06-2021 10:30:45.752 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:352 :    [mHikariPool-1 - Shutdown completed.
+28-06-2021 10:30:53.455 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 10:30:53.499 [36mINFO  [restartedMain] StartupInfoLogger.logStarting:55 :    [mStarting RestApplication using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 25207 (/home/avistech/Downloads/rest/target/classes started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 10:30:53.516 [32mDEBUG [restartedMain] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 10:30:53.518 [36mINFO  [restartedMain] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 10:30:53.624 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+28-06-2021 10:30:53.625 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+28-06-2021 10:30:54.953 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 10:30:54.974 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 13 ms. Found 0 JDBC repository interfaces.
+28-06-2021 10:30:56.065 [36mINFO  [restartedMain] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 8080 (http)
+28-06-2021 10:30:56.108 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-8080"]
+28-06-2021 10:30:56.111 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 10:30:56.114 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 10:30:56.205 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 10:30:56.206 [36mINFO  [restartedMain] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 2580 ms
+28-06-2021 10:30:56.807 [36mINFO  [restartedMain] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 10:30:57.117 [36mINFO  [restartedMain] HikariDataSource.getConnection:110 :    [mHikariPool-1 - Starting...
+28-06-2021 10:30:57.651 [36mINFO  [restartedMain] HikariDataSource.getConnection:123 :    [mHikariPool-1 - Start completed.
+28-06-2021 10:30:57.945 [36mINFO  [restartedMain] OptionalLiveReloadServer.startServer:58 :    [mLiveReload server is running on port 35729
+28-06-2021 10:30:58.004 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-8080"]
+28-06-2021 10:30:58.041 [36mINFO  [restartedMain] TomcatWebServer.start:220 :    [mTomcat started on port(s): 8080 (http) with context path ''
+28-06-2021 10:30:58.061 [36mINFO  [restartedMain] StartupInfoLogger.logStarted:61 :    [mStarted RestApplication in 5.877 seconds (JVM running for 7.834)
+28-06-2021 10:31:07.276 [36mINFO  [http-nio-8080-exec-2] DirectJDKLog.log:173 :    [mInitializing Spring DispatcherServlet 'dispatcherServlet'
+28-06-2021 10:31:07.277 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet 'dispatcherServlet'
+28-06-2021 10:31:07.281 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 2 ms
+28-06-2021 10:31:46.759 [33mWARN  [http-nio-8080-exec-3] AbstractHandlerExceptionResolver.logException:207 :    [mResolved [com.restApi.rest.exceptionConfig.ContactNotFoundException: contact id : 3 is not present]
+28-06-2021 10:32:46.423 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 10:32:46.426 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:350 :    [mHikariPool-1 - Shutdown initiated...
+28-06-2021 10:32:46.462 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:352 :    [mHikariPool-1 - Shutdown completed.
+28-06-2021 10:32:55.086 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 10:32:55.173 [36mINFO  [restartedMain] StartupInfoLogger.logStarting:55 :    [mStarting RestApplication using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 25397 (/home/avistech/Downloads/rest/target/classes started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 10:32:55.185 [32mDEBUG [restartedMain] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 10:32:55.187 [36mINFO  [restartedMain] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 10:32:55.299 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+28-06-2021 10:32:55.300 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+28-06-2021 10:32:56.684 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 10:32:56.706 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+28-06-2021 10:32:57.685 [36mINFO  [restartedMain] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 8080 (http)
+28-06-2021 10:32:57.763 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-8080"]
+28-06-2021 10:32:57.765 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 10:32:57.767 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 10:32:57.866 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 10:32:57.866 [36mINFO  [restartedMain] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 2562 ms
+28-06-2021 10:32:58.871 [36mINFO  [restartedMain] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 10:32:59.367 [36mINFO  [restartedMain] HikariDataSource.getConnection:110 :    [mHikariPool-1 - Starting...
+28-06-2021 10:32:59.775 [36mINFO  [restartedMain] HikariDataSource.getConnection:123 :    [mHikariPool-1 - Start completed.
+28-06-2021 10:33:00.051 [36mINFO  [restartedMain] OptionalLiveReloadServer.startServer:58 :    [mLiveReload server is running on port 35729
+28-06-2021 10:33:00.078 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-8080"]
+28-06-2021 10:33:00.123 [36mINFO  [restartedMain] TomcatWebServer.start:220 :    [mTomcat started on port(s): 8080 (http) with context path ''
+28-06-2021 10:33:00.145 [36mINFO  [restartedMain] StartupInfoLogger.logStarted:61 :    [mStarted RestApplication in 6.265 seconds (JVM running for 8.398)
+28-06-2021 10:33:09.470 [36mINFO  [http-nio-8080-exec-1] DirectJDKLog.log:173 :    [mInitializing Spring DispatcherServlet 'dispatcherServlet'
+28-06-2021 10:33:09.471 [36mINFO  [http-nio-8080-exec-1] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet 'dispatcherServlet'
+28-06-2021 10:33:09.474 [36mINFO  [http-nio-8080-exec-1] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 2 ms
+28-06-2021 10:33:09.865 [33mWARN  [http-nio-8080-exec-1] AbstractHandlerExceptionResolver.logException:207 :    [mResolved [com.restApi.rest.exceptionConfig.ContactNotFoundException: contact id : 3 is not present]
+28-06-2021 10:38:19.230 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 10:38:19.232 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:350 :    [mHikariPool-1 - Shutdown initiated...
+28-06-2021 10:38:19.259 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:352 :    [mHikariPool-1 - Shutdown completed.
+28-06-2021 10:56:37.168 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 10:56:37.259 [36mINFO  [restartedMain] StartupInfoLogger.logStarting:55 :    [mStarting RestApplication using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 26958 (/home/avistech/Downloads/rest/target/classes started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 10:56:37.269 [32mDEBUG [restartedMain] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 10:56:37.273 [36mINFO  [restartedMain] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 10:56:37.424 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+28-06-2021 10:56:37.426 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+28-06-2021 10:56:39.403 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 10:56:39.449 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 30 ms. Found 0 JDBC repository interfaces.
+28-06-2021 10:56:40.710 [36mINFO  [restartedMain] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 8080 (http)
+28-06-2021 10:56:40.751 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-8080"]
+28-06-2021 10:56:40.754 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 10:56:40.755 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 10:56:40.866 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 10:56:40.868 [36mINFO  [restartedMain] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 3429 ms
+28-06-2021 10:56:41.912 [36mINFO  [restartedMain] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 10:56:42.589 [36mINFO  [restartedMain] HikariDataSource.getConnection:110 :    [mHikariPool-1 - Starting...
+28-06-2021 10:56:43.625 [36mINFO  [restartedMain] HikariDataSource.getConnection:123 :    [mHikariPool-1 - Start completed.
+28-06-2021 10:56:46.476 [36mINFO  [restartedMain] OptionalLiveReloadServer.startServer:58 :    [mLiveReload server is running on port 35729
+28-06-2021 10:56:46.570 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-8080"]
+28-06-2021 10:56:46.641 [36mINFO  [restartedMain] TomcatWebServer.start:220 :    [mTomcat started on port(s): 8080 (http) with context path ''
+28-06-2021 10:56:46.695 [36mINFO  [restartedMain] StartupInfoLogger.logStarted:61 :    [mStarted RestApplication in 10.972 seconds (JVM running for 14.296)
+28-06-2021 10:57:02.150 [36mINFO  [http-nio-8080-exec-2] DirectJDKLog.log:173 :    [mInitializing Spring DispatcherServlet 'dispatcherServlet'
+28-06-2021 10:57:02.166 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet 'dispatcherServlet'
+28-06-2021 10:57:02.171 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 4 ms
+28-06-2021 11:03:18.196 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 11:03:18.199 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:350 :    [mHikariPool-1 - Shutdown initiated...
+28-06-2021 11:03:18.328 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:352 :    [mHikariPool-1 - Shutdown completed.
+28-06-2021 11:03:36.019 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 11:03:36.119 [36mINFO  [restartedMain] StartupInfoLogger.logStarting:55 :    [mStarting RestApplication using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 27407 (/home/avistech/Downloads/rest/target/classes started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 11:03:36.163 [32mDEBUG [restartedMain] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 11:03:36.177 [36mINFO  [restartedMain] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 11:03:36.316 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+28-06-2021 11:03:36.319 [36mINFO  [restartedMain] DeferredLog.logTo:255 :    [mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+28-06-2021 11:03:38.377 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 11:03:38.415 [36mINFO  [restartedMain] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 31 ms. Found 0 JDBC repository interfaces.
+28-06-2021 11:03:41.684 [36mINFO  [restartedMain] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 8080 (http)
+28-06-2021 11:03:41.746 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-8080"]
+28-06-2021 11:03:41.750 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 11:03:41.754 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 11:03:41.924 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 11:03:41.934 [36mINFO  [restartedMain] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 5607 ms
+28-06-2021 11:03:43.400 [36mINFO  [restartedMain] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 11:03:44.007 [36mINFO  [restartedMain] HikariDataSource.getConnection:110 :    [mHikariPool-1 - Starting...
+28-06-2021 11:03:44.942 [36mINFO  [restartedMain] HikariDataSource.getConnection:123 :    [mHikariPool-1 - Start completed.
+28-06-2021 11:03:45.390 [36mINFO  [restartedMain] OptionalLiveReloadServer.startServer:58 :    [mLiveReload server is running on port 35729
+28-06-2021 11:03:45.426 [36mINFO  [restartedMain] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-8080"]
+28-06-2021 11:03:45.491 [36mINFO  [restartedMain] TomcatWebServer.start:220 :    [mTomcat started on port(s): 8080 (http) with context path ''
+28-06-2021 11:03:45.532 [36mINFO  [restartedMain] StartupInfoLogger.logStarted:61 :    [mStarted RestApplication in 11.356 seconds (JVM running for 14.638)
+28-06-2021 11:04:01.779 [36mINFO  [http-nio-8080-exec-2] DirectJDKLog.log:173 :    [mInitializing Spring DispatcherServlet 'dispatcherServlet'
+28-06-2021 11:04:01.780 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet 'dispatcherServlet'
+28-06-2021 11:04:01.783 [36mINFO  [http-nio-8080-exec-2] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 1 ms
+28-06-2021 16:28:20.699 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 16:28:20.739 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:350 :    [mHikariPool-1 - Shutdown initiated...
+28-06-2021 16:28:20.780 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:352 :    [mHikariPool-1 - Shutdown completed.
+28-06-2021 16:29:12.912 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 16:29:13.236 [33mWARN  [main] DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning:78 :    [m
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/avistech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/avistech/.m2/repository/org/json/json/20190722/json-20190722.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+28-06-2021 16:29:13.371 [36mINFO  [main] StartupInfoLogger.logStarting:55 :    [mStarting RestApplicationTests using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 9220 (started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 16:29:13.380 [32mDEBUG [main] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 16:29:13.388 [36mINFO  [main] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 16:29:20.522 [36mINFO  [main] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 16:29:20.546 [36mINFO  [main] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+28-06-2021 16:29:23.282 [36mINFO  [main] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 0 (http)
+28-06-2021 16:29:23.350 [36mINFO  [main] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-auto-1"]
+28-06-2021 16:29:23.352 [36mINFO  [main] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 16:29:23.354 [36mINFO  [main] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 16:29:23.508 [36mINFO  [main] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 16:29:23.509 [36mINFO  [main] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 9994 ms
+28-06-2021 16:29:25.059 [36mINFO  [main] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 16:29:26.185 [36mINFO  [main] HikariDataSource.getConnection:110 :    [mHikariPool-1 - Starting...
+28-06-2021 16:29:27.409 [36mINFO  [main] HikariDataSource.getConnection:123 :    [mHikariPool-1 - Start completed.
+28-06-2021 16:29:28.072 [36mINFO  [main] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-auto-1"]
+28-06-2021 16:29:28.229 [36mINFO  [main] TomcatWebServer.start:220 :    [mTomcat started on port(s): 43413 (http) with context path ''
+28-06-2021 16:29:28.318 [36mINFO  [main] StartupInfoLogger.logStarted:61 :    [mStarted RestApplicationTests in 17.515 seconds (JVM running for 25.145)
+28-06-2021 16:29:29.795 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 16:29:29.799 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:350 :    [mHikariPool-1 - Shutdown initiated...
+28-06-2021 16:29:29.832 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:352 :    [mHikariPool-1 - Shutdown completed.
+28-06-2021 16:35:49.661 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 16:35:49.811 [33mWARN  [main] DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning:78 :    [m
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/avistech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/avistech/.m2/repository/org/json/json/20190722/json-20190722.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+28-06-2021 16:35:49.848 [36mINFO  [main] StartupInfoLogger.logStarting:55 :    [mStarting RestApplicationTests using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 9553 (started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 16:35:49.866 [32mDEBUG [main] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 16:35:49.877 [36mINFO  [main] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 16:35:51.269 [36mINFO  [main] RepositoryConfigurationDelegate.registerRepositoriesIn:128 :    [mBootstrapping Spring Data JDBC repositories in DEFAULT mode.
+28-06-2021 16:35:51.292 [36mINFO  [main] RepositoryConfigurationDelegate.registerRepositoriesIn:188 :    [mFinished Spring Data repository scanning in 15 ms. Found 0 JDBC repository interfaces.
+28-06-2021 16:35:52.538 [36mINFO  [main] TomcatWebServer.initialize:108 :    [mTomcat initialized with port(s): 0 (http)
+28-06-2021 16:35:52.597 [36mINFO  [main] DirectJDKLog.log:173 :    [mInitializing ProtocolHandler ["http-nio-auto-1"]
+28-06-2021 16:35:52.599 [36mINFO  [main] DirectJDKLog.log:173 :    [mStarting service [Tomcat]
+28-06-2021 16:35:52.601 [36mINFO  [main] DirectJDKLog.log:173 :    [mStarting Servlet engine: [Apache Tomcat/9.0.41]
+28-06-2021 16:35:52.794 [36mINFO  [main] DirectJDKLog.log:173 :    [mInitializing Spring embedded WebApplicationContext
+28-06-2021 16:35:52.795 [36mINFO  [main] ServletWebServerApplicationContext.prepareWebApplicationContext:289 :    [mRoot WebApplicationContext: initialization completed in 2876 ms
+28-06-2021 16:35:53.842 [36mINFO  [main] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 16:35:54.402 [36mINFO  [main] HikariDataSource.getConnection:110 :    [mHikariPool-1 - Starting...
+28-06-2021 16:35:54.827 [36mINFO  [main] HikariDataSource.getConnection:123 :    [mHikariPool-1 - Start completed.
+28-06-2021 16:35:55.178 [36mINFO  [main] DirectJDKLog.log:173 :    [mStarting ProtocolHandler ["http-nio-auto-1"]
+28-06-2021 16:35:55.217 [36mINFO  [main] TomcatWebServer.start:220 :    [mTomcat started on port(s): 36105 (http) with context path ''
+28-06-2021 16:35:55.236 [36mINFO  [main] StartupInfoLogger.logStarted:61 :    [mStarted RestApplicationTests in 6.288 seconds (JVM running for 9.716)
+28-06-2021 16:35:56.212 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 16:35:56.215 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:350 :    [mHikariPool-1 - Shutdown initiated...
+28-06-2021 16:35:56.232 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:352 :    [mHikariPool-1 - Shutdown completed.
+28-06-2021 17:52:40.718 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 17:52:40.732 [33mWARN  [main] DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning:78 :    [m
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/avistech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/avistech/.m2/repository/org/json/json/20190722/json-20190722.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+28-06-2021 17:52:40.787 [36mINFO  [main] StartupInfoLogger.logStarting:55 :    [mStarting ContactRestControllerTest using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 12938 (started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 17:52:40.795 [32mDEBUG [main] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 17:52:40.802 [36mINFO  [main] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 17:52:44.744 [36mINFO  [main] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 17:52:45.460 [36mINFO  [main] MockServletContext.log:455 :    [mInitializing Spring TestDispatcherServlet ''
+28-06-2021 17:52:45.461 [36mINFO  [main] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet ''
+28-06-2021 17:52:45.474 [36mINFO  [main] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 11 ms
+28-06-2021 17:52:45.619 [36mINFO  [main] StartupInfoLogger.logStarted:61 :    [mStarted ContactRestControllerTest in 5.729 seconds (JVM running for 9.123)
+28-06-2021 17:52:46.136 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 18:04:51.551 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 18:04:51.582 [33mWARN  [main] DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning:78 :    [m
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/avistech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/avistech/.m2/repository/org/json/json/20190722/json-20190722.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+28-06-2021 18:04:51.608 [36mINFO  [main] StartupInfoLogger.logStarting:55 :    [mStarting ContactRestControllerTest using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 13495 (started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 18:04:51.616 [32mDEBUG [main] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 18:04:51.624 [36mINFO  [main] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 18:04:55.105 [36mINFO  [main] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 18:04:55.684 [36mINFO  [main] MockServletContext.log:455 :    [mInitializing Spring TestDispatcherServlet ''
+28-06-2021 18:04:55.685 [36mINFO  [main] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet ''
+28-06-2021 18:04:55.689 [36mINFO  [main] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 3 ms
+28-06-2021 18:04:55.740 [36mINFO  [main] StartupInfoLogger.logStarted:61 :    [mStarted ContactRestControllerTest in 5.207 seconds (JVM running for 7.828)
+28-06-2021 18:04:56.231 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 18:05:58.367 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 18:05:58.398 [33mWARN  [main] DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning:78 :    [m
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/avistech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/avistech/.m2/repository/org/json/json/20190722/json-20190722.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+28-06-2021 18:05:58.413 [36mINFO  [main] StartupInfoLogger.logStarting:55 :    [mStarting ContactRestControllerTest using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 13640 (started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 18:05:58.421 [32mDEBUG [main] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 18:05:58.428 [36mINFO  [main] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 18:06:01.849 [36mINFO  [main] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 18:06:02.484 [36mINFO  [main] MockServletContext.log:455 :    [mInitializing Spring TestDispatcherServlet ''
+28-06-2021 18:06:02.485 [36mINFO  [main] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet ''
+28-06-2021 18:06:02.488 [36mINFO  [main] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 2 ms
+28-06-2021 18:06:02.549 [36mINFO  [main] StartupInfoLogger.logStarted:61 :    [mStarted ContactRestControllerTest in 5.188 seconds (JVM running for 7.682)
+28-06-2021 18:06:02.967 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 18:42:04.575 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 18:42:04.599 [33mWARN  [main] DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning:78 :    [m
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/avistech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/avistech/.m2/repository/org/json/json/20190722/json-20190722.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+28-06-2021 18:42:04.637 [36mINFO  [main] StartupInfoLogger.logStarting:55 :    [mStarting ContactRestControllerTest using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 15110 (started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 18:42:04.644 [32mDEBUG [main] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 18:42:04.649 [36mINFO  [main] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 18:42:10.227 [36mINFO  [main] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 18:42:11.015 [36mINFO  [main] MockServletContext.log:455 :    [mInitializing Spring TestDispatcherServlet ''
+28-06-2021 18:42:11.016 [36mINFO  [main] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet ''
+28-06-2021 18:42:11.020 [36mINFO  [main] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 2 ms
+28-06-2021 18:42:11.086 [36mINFO  [main] StartupInfoLogger.logStarted:61 :    [mStarted ContactRestControllerTest in 7.388 seconds (JVM running for 10.267)
+28-06-2021 18:42:11.590 [33mWARN  [main] TestContextManager.logException:546 :    [mCaught exception while invoking 'afterTestMethod' callback on TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4ffa7041] for test method [public void com.restApi.rest.controllers.ContactRestControllerTest.saveContact() throws java.lang.Exception] and test instance [com.restApi.rest.controllers.ContactRestControllerTest@632c3f55]
+org.mockito.exceptions.misusing.UnfinishedStubbingException: 
+Unfinished stubbing detected here:
+-> at com.restApi.rest.controllers.ContactRestControllerTest.saveContact(ContactRestControllerTest.java:66)
+
+E.g. thenReturn() may be missing.
+Examples of correct stubbing:
+    when(mock.isOk()).thenReturn(true);
+    when(mock.isOk()).thenThrow(exception);
+    doThrow(exception).when(mock).someVoidMethod();
+Hints:
+ 1. missing thenReturn()
+ 2. you are trying to stub a final method, which is not supported
+ 3: you are stubbing the behaviour of another mock inside before 'thenReturn' instruction if completed
+
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.resetMocks(ResetMocksTestExecutionListener.java:82)
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.resetMocks(ResetMocksTestExecutionListener.java:69)
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.afterTestMethod(ResetMocksTestExecutionListener.java:63)
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:441)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:94)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)
+28-06-2021 18:42:11.626 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+28-06-2021 18:57:19.120 [36mINFO  [background-preinit] Version.<clinit>:21 :    [mHV000001: Hibernate Validator 6.1.7.Final
+28-06-2021 18:57:19.167 [33mWARN  [main] DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer.logDuplicateJsonObjectsWarning:78 :    [m
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/avistech/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/home/avistech/.m2/repository/org/json/json/20190722/json-20190722.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+28-06-2021 18:57:19.186 [36mINFO  [main] StartupInfoLogger.logStarting:55 :    [mStarting ContactRestControllerTest using Java 11.0.2 on avistech-HP-EliteBook-8470p with PID 15923 (started by avistech in /home/avistech/Downloads/rest)
+28-06-2021 18:57:19.193 [32mDEBUG [main] StartupInfoLogger.logStarting:56 :    [mRunning with Spring Boot v2.4.2, Spring v5.3.3
+28-06-2021 18:57:19.199 [36mINFO  [main] SpringApplication.logStartupProfileInfo:660 :    [mNo active profile set, falling back to default profiles: default
+28-06-2021 18:57:24.793 [36mINFO  [main] ExecutorConfigurationSupport.initialize:181 :    [mInitializing ExecutorService 'applicationTaskExecutor'
+28-06-2021 18:57:25.446 [36mINFO  [main] MockServletContext.log:455 :    [mInitializing Spring TestDispatcherServlet ''
+28-06-2021 18:57:25.448 [36mINFO  [main] FrameworkServlet.initServletBean:525 :    [mInitializing Servlet ''
+28-06-2021 18:57:25.450 [36mINFO  [main] FrameworkServlet.initServletBean:547 :    [mCompleted initialization in 2 ms
+28-06-2021 18:57:25.534 [36mINFO  [main] StartupInfoLogger.logStarted:61 :    [mStarted ContactRestControllerTest in 7.326 seconds (JVM running for 10.45)
+28-06-2021 18:57:26.607 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'

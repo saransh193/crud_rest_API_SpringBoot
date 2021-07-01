@@ -1,0 +1,3 @@
+26-06-2021 07:55:56.242 [36mINFO  [SpringContextShutdownHook] ExecutorConfigurationSupport.shutdown:218 :    [mShutting down ExecutorService 'applicationTaskExecutor'
+26-06-2021 07:55:57.078 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:350 :    [mHikariPool-1 - Shutdown initiated...
+26-06-2021 07:55:57.134 [36mINFO  [SpringContextShutdownHook] HikariDataSource.close:352 :    [mHikariPool-1 - Shutdown completed.

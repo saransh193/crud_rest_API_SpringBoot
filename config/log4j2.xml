@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="60">   
+	<Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout>
+                <Pattern>%d{HH:mm:ss.SSS} %highlight{%-5p [%t] %C{1}.%M:%L :    }{ERROR=red, FATAL=red blink, WARN=yellow, INFO=cyan, DEBUG=green, TRACE=blue}%msg%n%throwable</Pattern>
+            </PatternLayout>
+        </Console>
+	<RollingFile name="ALL_LEVELS" fileName="logs/restapi.log"
+		filePattern="logs/restapi_%d{dd_MM_yyyy}_%i.log">
+            <PatternLayout>
+                <Pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} %highlight{%-5p [%t] %C{1}.%M:%L :    }{ERROR=red, FATAL=red blink, WARN=yellow, INFO=cyan, DEBUG=green, TRACE=blue}%msg%n%throwable</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5">
+            </DefaultRolloverStrategy>
+        </RollingFile>
+	<RollingFile name="ERROR_LOG" fileName="logs/errorlog/error.log"
+		filePattern="logs/errorlog/restapi-error_%d{dd-MM-yyyy}_%i.log">
+            <LevelRangeFilter minLevel="FATAL" maxLevel="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <pattern>[%-5level] %d{dd-MM-yyyy HH:mm:ss.SSS} [%t] %C{1}.%M:%L - %msg%n%throwable</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"></DefaultRolloverStrategy>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <AsyncLogger name="com.restApi.rest" level="TRACE" additivity="false" includeLocation="true">
+            <AppenderRef ref="ALL_LEVELS"/>
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="ERROR_LOG"/>
+        </AsyncLogger>
+        
+        <Root level="INFO" additivity="false">
+            <AppenderRef ref="ALL_LEVELS"/>
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="ERROR_LOG"/>
+        </Root>
+    </Loggers>
+</Configuration>

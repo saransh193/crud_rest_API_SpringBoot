@@ -1,0 +1,20 @@
+[WARN ] 30-06-2021 10:56:44.557 [http-nio-8080-exec-1] ResponseEntityExceptionHandler.handleHttpRequestMethodNotSupported:209 - Request method 'GET' not supported
+[WARN ] 30-06-2021 10:56:45.511 [http-nio-8080-exec-1] AbstractHandlerExceptionResolver.logException:207 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[WARN ] 30-06-2021 10:56:55.267 [http-nio-8080-exec-3] AbstractHandlerExceptionResolver.logException:207 - Resolved [java.lang.Exception]
+[WARN ] 30-06-2021 10:57:37.654 [http-nio-8080-exec-5] AbstractHandlerExceptionResolver.logException:207 - Resolved [java.lang.Exception]
+[WARN ] 30-06-2021 10:59:05.587 [http-nio-8080-exec-7] AbstractHandlerExceptionResolver.logException:207 - Resolved [java.lang.Exception]
+[WARN ] 30-06-2021 11:00:57.226 [http-nio-8080-exec-1] AbstractHandlerExceptionResolver.logException:207 - Resolved [java.lang.Exception]
+[WARN ] 30-06-2021 11:04:56.516 [http-nio-8080-exec-1] AbstractHandlerExceptionResolver.logException:207 - Resolved [java.lang.Exception]
+[WARN ] 30-06-2021 11:12:37.416 [http-nio-8080-exec-2] AbstractHandlerExceptionResolver.logException:207 - Resolved [com.restApi.rest.exceptionConfig.ContactNotFoundException: No contact.]
+[WARN ] 30-06-2021 11:15:56.878 [http-nio-8080-exec-2] AbstractHandlerExceptionResolver.logException:207 - Resolved [com.restApi.rest.exceptionConfig.ContactNotFoundException: No contact.]
+[WARN ] 30-06-2021 11:19:19.655 [http-nio-8080-exec-4] ResponseEntityExceptionHandler.handleHttpRequestMethodNotSupported:209 - Request method 'PUT' not supported
+[WARN ] 30-06-2021 11:19:19.687 [http-nio-8080-exec-4] AbstractHandlerExceptionResolver.logException:207 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+[ERROR] 30-06-2021 11:19:33.755 [http-nio-8080-exec-5] ContactRestDao.updateContactDetailsInDB:53 - exception in saving data contact id : 2 is not present
+[WARN ] 30-06-2021 11:19:33.797 [http-nio-8080-exec-5] AbstractHandlerExceptionResolver.logException:207 - Resolved [java.lang.Exception: exception in updating contact ]
+[ERROR] 30-06-2021 11:23:38.684 [http-nio-8080-exec-1] ContactRestDao.updateContactDetailsInDB:55 - exception in saving data contact id : 2 is not present
+[WARN ] 30-06-2021 11:23:38.754 [http-nio-8080-exec-1] AbstractHandlerExceptionResolver.logException:207 - Resolved [java.lang.Exception: com.restApi.rest.exceptionConfig.ContactNotFoundException: contact id : 2 is not present]
+[WARN ] 30-06-2021 11:27:53.235 [http-nio-8080-exec-2] AbstractHandlerExceptionResolver.logException:207 - Resolved [com.restApi.rest.exceptionConfig.ContactNotFoundException: contact id : 2 is not present]
+[ERROR] 30-06-2021 11:33:30.608 [http-nio-8080-exec-1] ContactRestDao.updateContactDetailsInDB:53 - exception in saving data PreparedStatementCallback; bad SQL grammar [UPDATE contact_informatio set firstname=?,lastname=?,phone=?,email=?,address=? WHERE id=?]; nested exception is org.postgresql.util.PSQLException: ERROR: relation "contact_informatio" does not exist
+  Position: 8
+[WARN ] 30-06-2021 11:33:30.663 [http-nio-8080-exec-1] AbstractHandlerExceptionResolver.logException:207 - Resolved [java.lang.Exception: exception in updating contact ]
+[WARN ] 30-06-2021 11:52:55.209 [http-nio-8080-exec-1] AbstractHandlerExceptionResolver.logException:207 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
